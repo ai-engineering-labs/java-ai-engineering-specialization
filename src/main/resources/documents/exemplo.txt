@@ -1,0 +1,6 @@
+Java AI Engineering Specialization
+
+Este é um documento de exemplo para testar a indexação RAG.
+Você pode indexar este arquivo pelo caminho absoluto no endpoint POST /rag/index/file.
+
+O projeto usa LangChain4j com Ollama para embeddings e geração de respostas.

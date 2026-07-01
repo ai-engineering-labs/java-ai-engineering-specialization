@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   application:
@@ -7,11 +7,18 @@ spring:
 
 springdoc:
   api-docs:
-    path: /api-docs
+    path: /v3/api-docs
   swagger-ui:
     path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
 
 rag:
+  chat:
+    base-url: http://localhost:11434
+    model-name: llama3.2:1b
+    temperature: 0.2
+    timeout: 60s
   chunking:
     max-segment-size: 300
     max-overlap-size: 30
